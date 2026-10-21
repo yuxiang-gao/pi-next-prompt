@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Pi Next Prompt — Your next step. Still your call.</title>
+  <desc id="desc">An original developer-tool illustration: a completed task produces dim ghost text inside the empty editor. Tab or Right accepts; nothing is auto-sent.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#141622"/><stop offset="1" stop-color="#0c0f18"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#8b75d4" stop-opacity=".17"/><stop offset="1" stop-color="#8b75d4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="border" x1="0" x2="1" y2="1"><stop stop-color="#b7a2f1"/><stop offset="1" stop-color="#705c99"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#c7bbef" stroke-opacity=".045"/></pattern>
+    <filter id="shadow" x="-20%" y="-30%" width="150%" height="170%"><feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#000" flood-opacity=".45"/></filter>
+  </defs>
+  <rect width="1600" height="800" fill="url(#bg)"/>
+  <rect width="1600" height="800" fill="url(#grid)"/>
+  <ellipse cx="1230" cy="350" rx="580" ry="500" fill="url(#glow)"/>
+  <path d="M80 85H1520" stroke="#ddd3f3" stroke-opacity=".13"/>
+  <path d="M80 714H1520" stroke="#ddd3f3" stroke-opacity=".13"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(80 127)">
+      <path d="M0 0l10 8L0 16" fill="none" stroke="#ecac80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="27" y="14" fill="#bcb0d7" font-size="15" letter-spacing="3">A PI EXTENSION</text>
+    </g>
+    <text x="74" y="300" fill="#f7f2e9" font-size="106" font-weight="700" letter-spacing="-5">Pi Next</text>
+    <text x="74" y="413" fill="#f7f2e9" font-size="106" font-weight="700" letter-spacing="-5">Prompt<tspan fill="#e4a37c">.</tspan></text>
+    <text x="82" y="479" fill="#bbb6c8" font-size="27" letter-spacing="-.3">Your next step. Still your call.</text>
+    <g transform="translate(82 535)">
+      <rect width="304" height="48" rx="24" fill="#b7a2f1" fill-opacity=".055" stroke="#514963"/>
+      <text x="24" y="30" fill="#d9cdec" font-size="13" font-weight="700" letter-spacing="1.7">SUGGEST</text>
+      <path d="M111 24h19m-5-5 5 5-5 5" stroke="#ecac80" fill="none" stroke-width="1.5"/>
+      <text x="145" y="30" fill="#d9cdec" font-size="13" font-weight="700" letter-spacing="1.7">EDIT</text>
+      <path d="M195 24h19m-5-5 5 5-5 5" stroke="#ecac80" fill="none" stroke-width="1.5"/>
+      <text x="230" y="30" fill="#d9cdec" font-size="13" font-weight="700" letter-spacing="1.7">SEND</text>
+    </g>
+    <text x="82" y="670" fill="#726e83" font-size="14" letter-spacing=".6">YOUR MODEL. OPTIONAL SYSTEM ONE. YOUR CALL.</text>
+    <g filter="url(#shadow)">
+      <rect x="777" y="173" width="735" height="460" rx="22" fill="#181b29" stroke="#353346"/>
+      <path d="M799 173h691a22 22 0 0 1 22 22v42H777v-42a22 22 0 0 1 22-22" fill="#202231"/>
+      <path d="M777 237h735" stroke="#353346"/>
+      <circle cx="809" cy="205" r="5" fill="#716070"/><circle cx="828" cy="205" r="5" fill="#8c806e"/><circle cx="847" cy="205" r="5" fill="#6a8179"/>
+      <text x="1144" y="210" fill="#9c97ae" font-size="14" text-anchor="middle" letter-spacing="1">next-prompt</text>
+      <g font-family="'Courier New', monospace">
+        <circle cx="817" cy="286" r="5" fill="#a8cfb4"/>
+        <text x="835" y="292" fill="#b6d7bf" font-size="18">Task complete</text>
+        <text x="811" y="331" fill="#868095" font-size="15">Feature implemented.</text>
+        <text x="811" y="357" fill="#868095" font-size="15">Tests are the next step.</text>
+        <path d="M804 425h681M804 499h681" stroke="#494254"/>
+        <rect x="817" y="445" width="13" height="26" fill="#8f879c"/>
+        <text x="817" y="466" fill="#181b29" font-size="21">R</text>
+        <text x="830" y="466" fill="#777181" font-size="21">un the relevant tests.</text>
+        <text x="811" y="547" fill="#9a92a8" font-size="14">Tab / Right accepts · Enter sends</text>
+        <text x="811" y="574" fill="#777181" font-size="14">Typing hides · Clearing restores</text>
+      </g>
+      <text x="811" y="609" fill="#686276" font-size="11" letter-spacing="1.6">ILLUSTRATIVE PREVIEW</text>
+      <text x="1474" y="609" fill="#93869f" font-size="12" text-anchor="end">/next-prompt init</text>
+    </g>
+    <text x="1520" y="753" fill="#706b80" font-size="11" letter-spacing="2" text-anchor="end">LESS FRICTION. MORE INTENT.</text>
+  </g>
+</svg>

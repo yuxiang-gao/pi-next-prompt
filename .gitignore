@@ -1,0 +1,11 @@
+node_modules/
+coverage/
+*.tgz
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+next-prompt.json
+next-prompt.json.backup-*
+*.local.json

@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "autoSuggest": true,
+  "mode": "generate",
+  "classifier": {
+    "mode": "system-one",
+    "endpoint": "https://api.typesafe.ai/v1/systemone",
+    "model": "jev-latest",
+    "apiKey": "$TYPESAFE_API_KEY"
+  },
+  "classes": [],
+  "suggestionCount": 1,
+  "confidence": 0.8,
+  "timeoutMs": 10000,
+  "maxContextChars": 8000
+}

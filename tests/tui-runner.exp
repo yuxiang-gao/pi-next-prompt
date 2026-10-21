@@ -1,0 +1,44 @@
+set timeout 15
+log_user 1
+spawn -noecho {*}$argv
+set acted 0
+expect {
+  -exact "1/2" {
+    if {!$acted} {
+      set acted 1
+      after 100
+      send -- "\033\133B"
+      after 100
+      send -- "\t"
+    }
+    exp_continue
+  }
+  -exact "2/2" { exp_continue }
+  -exact "功能已经实现。" {
+    if {[info exists env(NEXT_PROMPT_SMOKE_MANUAL)] && $env(NEXT_PROMPT_SMOKE_MANUAL) eq "1" && !$acted} {
+      set acted 1
+      after 150
+      send -- "/next-prompt suggest\r"
+    }
+    exp_continue
+  }
+  -exact "行相关测试，并修复发现的问题。" {
+    if {![info exists env(NEXT_PROMPT_SMOKE_COUNT)] || $env(NEXT_PROMPT_SMOKE_COUNT) ne "2"} {
+      after 150
+      if {[info exists env(NEXT_PROMPT_SMOKE_KEY)] && $env(NEXT_PROMPT_SMOKE_KEY) eq "restore"} {
+        send -- "x"
+        after 100
+        send -- "\177"
+        after 100
+        send -- "\033\133C"
+      } elseif {[info exists env(NEXT_PROMPT_SMOKE_KEY)] && $env(NEXT_PROMPT_SMOKE_KEY) eq "right"} {
+        send -- "\033\133C"
+      } else {
+        send -- "\t"
+      }
+    }
+    exp_continue
+  }
+  eof { catch wait result; exit [lindex $result 3] }
+  timeout { close; catch wait; exit 124 }
+}
